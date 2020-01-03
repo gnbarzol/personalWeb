@@ -1,22 +1,26 @@
 body{
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
 }
 
 /**Header**/
 .header{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 60px;
     width: auto;
     background-color: #333333;
+    padding: 0px 60px;
 }
 
-.title{
-    margin: 10px auto;
-    color: white
+.header__title{
+    color: white;
+    margin: 0;
+    cursor: pointer;
 }
-.sigueme-widget{
+.header__sigueme-widget{
     display: flex;
 }
 .facebook{
@@ -47,7 +51,44 @@ body{
 }
 
 /**Contenido(Main)**/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+    padding-top: 40px;
+    position: relative;
+}
 
+.main__container-item{
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    height: 170px;
+    width: 140px;
+    display: inline-block; 
+    cursor: pointer;
+    transition: 450ms all; /*Cuando se hagan transiciones duraran 450 milisegundos, es para poner fluides*/
+    transform-origin: center left; /*Hacer que las tranformaciones empiezen desde el centro de izq. a der.*/
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+/**
+.main__container-item:hover ~ .main__container-item{ 
+    transform: translate3d(5px, -5px, 0); /*Para desplazar los elementos inline a la derecha 5px a la abajo, 5 a la izq; de los elementos que no estan encima del cursor 
+    box-shadow: -2.5px 2.5px 2.5px 1.5px rgb(204,0,102,0.4);
+}*/
+
+.main__container:hover .main__container-item{/*Opaca a los demas contenedores que no enfoco*/
+    opacity: 0.3;
+}
+.main__container:hover .main__container-item:hover{/*Cuando tengo enfocado al contenedor*/
+    transform: translate3d(5px, -5px, 0);
+    box-shadow: -2.5px 2.5px 2.5px 1.5px rgb(204,0,102,0.4);
+    /*transform: scale(1.5); para que elemento agrande 1.5 su tamaño orginal */
+    opacity: 1;
+}
 
 
 /**Footer**/

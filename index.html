@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <title>PersonalWeb</title>
 
 </head>
 <body>
     <header class="header">
-        <h1 class= "title">Bienvenido a mi página personal</h1>
-    
-        <div class="sigueme-widget">
-            <div class="facebook item--sigueme">
-                <a href="https://www.facebook.com/GaryBarzola301099" target="_blank"></a>
-            </div>
-            <div class="instagram item--sigueme">
-                <a href="https://www.instagram.com/ngary_19/" target="_blank"></a>
-            </div>
-            <div class="github item--sigueme">
-                <a href="http://github.com/gnbarzol" target="_blank"></a>
-            </div>
-            <div class="bitbucket item--sigueme">
-                <a href="https://bitbucket.org/%7Bd2a204c8-1bbc-4b0a-9522-47f964edca54%7D/" target="_blank"></a>
-            </div>
-            
-        </div>
+        <h1 class= "header__title">Página personal</h1>
+        <nav class="header__sigueme-widget">
+            <a class="facebook item--sigueme" href="https://www.facebook.com/GaryBarzola301099" target="_blank"></a>
+            <a class="instagram item--sigueme" href="https://www.instagram.com/ngary_19/" target="_blank"></a>                        
+            <a class="github item--sigueme" href="http://github.com/gnbarzol" target="_blank"></a>                        
+            <a class="bitbucket item--sigueme" href="https://bitbucket.org/%7Bd2a204c8-1bbc-4b0a-9522-47f964edca54%7D/" target="_blank"></a>
+        </nav>
     </header>
-    
-    <main>
+
+    <main class="main">
+        <div class="main__container">
+            <div class="main__container-item">
+                <img class="main__container__img" src="" alt="Pagina1">
+                <div class="main__container__details">
+                    <p class="main__container__details--title">Titulo </p>
+                    <p class="main__container__details--description">Fecha creación</p>
+                </div>
+            </div>
+
+            <div class="main__container-item">
+                <img class="main__container__img" src="" alt="Pagina2">
+                <div class="main__container__details">
+                    <p class="main__container__details--title">Titulo 2 </p>
+                    <p class="main__container__details--description">Fecha creación 2</p>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
