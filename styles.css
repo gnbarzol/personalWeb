@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 /**Header**/
@@ -11,7 +11,7 @@ body{
     align-items: center;
     height: 60px;
     width: auto;
-    background-color: #333333;
+    background-image: linear-gradient(120deg, rgb(204,0,102) 0%, #8d6391 100%);
     padding: 0px 60px;
 }
 
@@ -19,25 +19,26 @@ body{
     color: white;
     margin: 0;
     cursor: pointer;
+    /* border-bottom: 2px solid rgb(204,0,102); */
 }
 .header__sigueme-widget{
     display: flex;
 }
 .facebook{
-    background-image: url("facebook.svg");
+    background-image: url("images/facebook.svg");
 }
 
 .instagram{
-    background-image: url("instagram.svg");
+    background-image: url("images/instagram.svg");
 }
   
 .github{
-    background-image: url("github.svg");
+    background-image: url("images/github.svg");
 }
 
 
 .bitbucket{
-    background-image: url("bitbucket.svg");
+    background-image: url("images/bitbucket.svg");
 }
 .item--sigueme{
     height: 30px;
@@ -46,7 +47,8 @@ body{
     filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg) brightness(110%) contrast(110%);
 }
 .item--sigueme:hover{
-    filter: invert(16%) sepia(99%) saturate(5641%) hue-rotate(318deg) brightness(102%) contrast(107%);
+    /* filter: invert(16%) sepia(99%) saturate(5641%) hue-rotate(318deg) brightness(102%) contrast(107%); */
+    filter: invert(9%) sepia(29%) saturate(4822%) hue-rotate(219deg) brightness(104%) contrast(118%);
     cursor: pointer;
 }
 
@@ -77,7 +79,7 @@ body{
 /**
 .main__container-item:hover ~ .main__container-item{ 
     transform: translate3d(5px, -5px, 0); /*Para desplazar los elementos inline a la derecha 5px a la abajo, 5 a la izq; de los elementos que no estan encima del cursor 
-    box-shadow: -2.5px 2.5px 2.5px 1.5px rgb(204,0,102,0.4);
+    box-shadow: -2.5px 2.5px 2.5px 1.5px rgba(204,0,102,0.4);
 }*/
 
 .main__container:hover .main__container-item{/*Opaca a los demas contenedores que no enfoco*/
@@ -85,7 +87,7 @@ body{
 }
 .main__container:hover .main__container-item:hover{/*Cuando tengo enfocado al contenedor*/
     transform: translate3d(5px, -5px, 0);
-    box-shadow: -2.5px 2.5px 2.5px 1.5px rgb(204,0,102,0.4);
+    box-shadow: -2.5px 2.5px 2.5px 1.5px rgba(204,0,102,0.4);
     /*transform: scale(1.5); para que elemento agrande 1.5 su tamaño orginal */
     opacity: 1;
 }
@@ -93,7 +95,7 @@ body{
 
 /**Footer**/
 .footer{
-    background-color: #333333;
+    background-image: linear-gradient(120deg, #8d6391 0%, rgb(204,0,102) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -112,6 +114,6 @@ body{
 }
 
 .footer nav > a:hover{
-    text-decoration: underline;
+    border-bottom: 1px solid white;
 }
 
